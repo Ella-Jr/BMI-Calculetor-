@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 double h = Double.parseDouble(height.getText().toString());
                 double w = Double.parseDouble(weight.getText().toString());
                 double bmi = w / (h * h);
+                bmi=bmi*10000;
                 text.setText(Double.toString(bmi) );
                 text.setText("");
             }
